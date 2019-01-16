@@ -1,0 +1,37 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    database_host: 127.0.0.1
+    database_port: ~
+    database_name: symfony
+    database_user: root
+    database_password: ~
+    # You should uncomment this if you want to use pdo_sqlite
+    #database_path: "%kernel.root_dir%/data.db3"
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: ~
+    mailer_password: ~
+
+    # A secret key that's used to generate certain security-related tokens
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+
+    # For Github you'll need the client_id and secret   
+    github_client_id: <replace-with-your-github-client-id>
+    github_secret: <replace-with-your-github-secret>
+    
+    # For Facebook you'll need the client_id and secret   
+    facebook_client_id: <replace-with-your-facebook_client_id-client-id>
+    facebook_secret: <replace-with-your-facebook_client_id-secret>
+    
+    # For Google+ you'll need the client_id and secret   
+    googleplus_client_id: <replace-with-your-googleplus-client-id>
+    googleplus_secret: <replace-with-your-googleplus-secret>
+    
+    # For Stack Exchange you'll need the client_id, secret and key
+    stackexchange_client_id: <replace-with-your-stackexchange-client-id>
+    stackexchange_secret: <replace-with-your-stackexchange-secret>
+    stackexchange_key: <replace-with-your-stackexchange-key>
