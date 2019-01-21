@@ -26,7 +26,7 @@
                     var status = response.status;
                     console.log(response.status);
 
-                    if (status === "connected") {
+                    if (status === "connected" && "{{app.user|length}}" > 0) {
                         document.getElementById("logout").style.display = 'block';
                         document.getElementById("connect").style.display = 'none';
                     }
@@ -113,13 +113,13 @@
             </div>
 
             <div id="next">
-               
+                
                 <div id = "connect">
                     <div class="alert alert-warning">
                       <strong>Info!</strong> You are not currently not logged in facebook.
                     </div>
 
-                    <a class = "btn btn-primary" href="#" onclick="fb_login();">Connect With Faceboooooook!</a>
+                    <a class = "btn btn-primary" href="{{ app.request.uri }}connect/facebook">Connect With Faceboooooook!</a>
                 </div>
 
                 <div id = "logout" style = "display:none;">
