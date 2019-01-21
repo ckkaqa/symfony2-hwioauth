@@ -104,7 +104,7 @@ hwi_oauth:
             client_id:      "%facebook_client_id%"
             client_secret:  "%facebook_secret%"
             infos_url:     "https://graph.facebook.com/me?fields=id,name,email"
-            scope:         "email"
+            scope: "email"
             options:
                 display: popup
         googleplus:
